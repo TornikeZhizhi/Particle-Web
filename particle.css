@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  list-style-type: none;
+  box-sizing: border-box; }
+
+a:hover {
+  text-decoration: none; }
+
+body {
+  margin: 0; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11; }
+  .header .navigation .bg-light {
+    background-color: transparent !important; }
+    .header .navigation .bg-light .navbar-toggler {
+      outline: none; }
+      .header .navigation .bg-light .navbar-toggler .navbar-toggler-icon {
+        background: unset;
+        color: #fff;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    .header .navigation .bg-light #navbarSupportedContent .navbar-nav {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%; }
+      .header .navigation .bg-light #navbarSupportedContent .navbar-nav a {
+        color: #fff;
+        font-size: 14px;
+        outline: none; }
+
+#stats {
+  display: none !important; }
+
+.main_fluid {
+  height: 900px;
+  background-image: url("img/kyle-cesmat-99929-unsplash.jpg");
+  background-size: cover;
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+  position: relative; }
+  .main_fluid #particles-js {
+    background-color: rgba(33, 33, 33, 0.5);
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .main_fluid .main_text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    top: 50%;
+    color: #fff;
+    text-align: center; }
+    .main_fluid .main_text h1 {
+      font-size: 75px; }
+
+.about_fluid {
+  position: relative;
+  overflow: hidden; }
+  .about_fluid .pens {
+    position: absolute;
+    right: 0%;
+    top: 0px; }
+    .about_fluid .pens img {
+      width: 12vw; }
+  .about_fluid .about_cont {
+    position: relative;
+    padding: 100px 0; }
+    .about_fluid .about_cont .progress_row {
+      padding-top: 30px; }
+      .about_fluid .about_cont .progress_row .skils_box {
+        margin-top: 30px;
+        position: relative; }
+        .about_fluid .about_cont .progress_row .skils_box h3 {
+          font-size: 16px; }
+        .about_fluid .about_cont .progress_row .skils_box .skils_progress {
+          width: 0%;
+          height: 15px;
+          background: linear-gradient(to bottom, #5e04ff 0%, #673ab7 97%);
+          border-radius: 5px;
+          position: relative;
+          color: #fff; }
+          .about_fluid .about_cont .progress_row .skils_box .skils_progress span {
+            position: absolute;
+            top: -31px;
+            right: 3px;
+            color: #333;
+            font-size: 21px;
+            font-weight: bold; }
+    .about_fluid .about_cont .about_tittle_col {
+      margin-bottom: 50px; }
+      .about_fluid .about_cont .about_tittle_col h2 {
+        font-weight: 100; }
+    .about_fluid .about_cont .prof_img img {
+      width: 100%; }
+    .about_fluid .about_cont .about_text p {
+      font-size: 21px; }
+
+.grapchice {
+  position: relative;
+  animation-name: GRPHICE;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
+
+@keyframes GRPHICE {
+  100% {
+    width: 90%; } }
+.frameworks {
+  position: relative;
+  animation-name: frameworks;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
+
+@keyframes frameworks {
+  0% {
+    width: 0%; }
+  100% {
+    width: 98%; } }
+.design {
+  position: relative;
+  animation-name: design;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
+
+@keyframes design {
+  0% {
+    width: 0%; }
+  100% {
+    width: 85%; } }
+.ui_design {
+  position: relative;
+  animation-name: ui_design;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
+
+@keyframes ui_design {
+  0% {
+    width: 0%; }
+  100% {
+    width: 70%; } }
+.offer_fluid {
+  padding: 100px 0;
+  background-color: #fff; }
+  .offer_fluid .container h3 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 80px; }
+  .offer_fluid .offer_box {
+    text-align: center;
+    padding: 90px 30px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(64, 64, 64, 0.8);
+    transition: .3s; }
+    .offer_fluid .offer_box:hover {
+      transform: scale(1.1, 1.1);
+      cursor: pointer; }
+    .offer_fluid .offer_box i {
+      color: #673AB7;
+      font-size: 30px;
+      display: inline-block;
+      margin-bottom: 15px; }
+    .offer_fluid .offer_box h4 {
+      margin-bottom: 15px; }
+    .offer_fluid .offer_box p {
+      margin-bottom: 0; }
+
+.portf_fluid {
+  padding: 100px 0; }
+  .portf_fluid h4 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000; }
+  .portf_fluid .portf_filter #filters {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px; }
+  .portf_fluid .portf_filter #portfoliolist {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden; }
+
+#filters li span.active {
+  background: #FFF;
+  color: #000;
+  border-radius: 10px;
+  FONT-SIZE: 20px; }
+
+#filters li span {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 20px; }
+
+.blog_fluid {
+  padding: 100px 0;
+  background-color: #fff; }
+  .blog_fluid .blog_container h4 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000; }
+  .blog_fluid .blog_container .blog_box {
+    padding: 100px 30px;
+    box-shadow: 0 0 30px rgba(64, 64, 64, 0.8);
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer; }
+    .blog_fluid .blog_container .blog_box:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      width: 100%;
+      left: 0;
+      height: 0%;
+      background-color: rgba(102, 0, 204, 0.4);
+      transition: .4s; }
+    .blog_fluid .blog_container .blog_box:hover:after {
+      height: 100%;
+      cursor: pointer; }
+    .blog_fluid .blog_container .blog_box h2 {
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #333;
+      font-size: 28px;
+      line-height: 32px; }
+    .blog_fluid .blog_container .blog_box h5 {
+      font-size: 13px;
+      color: #999; }
+
+.container {
+  width: unset !important;
+  max-width: 1170px; }
+
+.footer_fluid {
+  background: #111;
+  padding: 100px 0; }
+  .footer_fluid .container .copyright {
+    color: #777777;
+    margin-top: 20px; }
+  .footer_fluid .container .fa_icons {
+    display: flex; }
+    .footer_fluid .container .fa_icons a {
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      background: #2D5DA1;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px; }
+      .footer_fluid .container .fa_icons a i {
+        font-size: 18px;
+        color: #fff; }
+
+.unpadding {
+  padding-left: 0;
+  padding-right: 0; }
+
+.nav_bg {
+  background-color: #000; }
+
+.tokk {
+  color: #fff !important; }
+
+.navigation {
+  padding: 7px 10px;
+  transition: .7s; }
+  .navigation ul, .navigation li {
+    margin: 0; }
+
+.scrol_nav {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+@media only screen and (max-width: 992px) {
+  .main_fluid {
+    height: 600px; }
+
+  .main_fluid .main_text {
+    width: 100%; }
+
+  .main_fluid .main_text h1 {
+    font-size: 60px; }
+
+  .about_fluid .about_cont {
+    padding: 46px 0; }
+
+  .about_fluid .about_cont .about_tittle_col h2 {
+    font-size: 28px; }
+
+  .offer_fluid .offer_box {
+    width: 50%;
+    margin: 30px auto;
+    /* padding-bottom: 69px; */ }
+
+  .blog_fluid .blog_container .blog_box {
+    width: 50%;
+    margin: 30px auto; } }
+@media only screen and (max-width: 576px) {
+  .main_fluid {
+    height: 400px; }
+
+  .main_fluid .main_text {
+    width: 100%; }
+
+  .main_fluid .main_text h1 {
+    font-size: 41px; }
+
+  .main_fluid .main_text p {
+    font-size: 14px; }
+
+  .pens {
+    display: none; }
+
+  .about_fluid .about_cont {
+    padding: 46px 0; }
+
+  .about_fluid .about_cont .about_tittle_col h2 {
+    font-size: 18px; }
+
+  .offer_fluid .offer_box {
+    width: 50%;
+    margin: 30px auto;
+    /* padding-bottom: 69px; */ }
+
+  .blog_fluid .blog_container .blog_box {
+    width: 50%;
+    margin: 30px auto; }
+
+  .about_fluid .about_cont .about_text p {
+    font-size: 19px; }
+
+  .about_fluid .about_cont .about_text h3 {
+    font-size: 25px; }
+
+  .offer_fluid .offer_box {
+    width: 100%;
+    margin: 30px auto;
+    /* padding-bottom: 69px; */
+    padding: 38px 30px; }
+
+  .offer_fluid .offer_box p {
+    font-size: 13px; }
+
+  .portf_fluid h4 {
+    font-size: 30px; }
+
+  .portf_fluid .portf_filter #filters {
+    width: 100%;
+    padding: 30px 0; }
+
+  #filters li span {
+    font-size: 12px;
+    padding: 0;
+    margin-right: 10px; }
+
+  #filters li span.active {
+    background: #FFF;
+    color: #000;
+    border-radius: 10px;
+    FONT-SIZE: 12px;
+    padding: 0;
+    background: unset; }
+
+  #portfoliolist .portfolio {
+    width: 100%; }
+
+  .blog_fluid .blog_container .blog_box {
+    width: 100%;
+    padding: 55px 30px; }
+
+  .blog_fluid .blog_container .blog_box h2 {
+    font-size: 23px; }
+
+  .footer_fluid .container .fa_icons a {
+    width: 32px;
+    height: 32px; }
+
+  .footer_fluid {
+    background: #111;
+    padding: 40px 0; }
+
+  .footer_fluid .container .copyright {
+    text-align: center;
+    font-size: 12px; }
+
+  .blog_fluid {
+    padding: 15px 0;
+    background-color: #fff; }
+
+  .blog_fluid .blog_container h4 {
+    margin: 35px 0px;
+    margin-bottom: 2px; }
+
+  .portf_fluid {
+    padding: 40px 0; }
+
+  .portf_fluid h4 {
+    font-size: 30px;
+    margin-bottom: 0px; } }
+@media only screen and (max-width: 375px) {
+  .main_fluid {
+    height: 242px;
+    background-image: url(img/kyle-cesmat-99929-unsplash.jpg);
+    padding-left: 0px;
+    padding-right: 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center center; }
+
+  .main_fluid .main_text h1 {
+    font-size: 30px; }
+
+  .main_fluid .main_text p {
+    font-size: 12px; } }
+
+/*# sourceMappingURL=particle.css.map */
